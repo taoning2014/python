@@ -33,6 +33,3 @@ while t != 36:
 print ('Number of months: ',t) 
 print ('Best savings rate:',(min_portion_saved + max_portion_saved) / 20000 )
 print ('Steps in bisection search:', count)
-             
-
-    

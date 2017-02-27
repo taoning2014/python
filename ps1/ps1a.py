@@ -15,4 +15,4 @@ t = 0
 while current_savings < total_cost * portion_down_payment:
     t = t + 1
     current_savings = current_savings + annal_salary / 12 * portion_saved + current_savings * r / 12
-print('Number of months: ',t) 
+print('Number of months: ',t)

@@ -19,4 +19,4 @@ while current_savings < total_cost * portion_down_payment:
     current_savings = current_savings + annal_salary / 12 * portion_saved + current_savings * r / 12
     if t % 6 == 0:
         annal_salary = annal_salary * (1 + semi_annual_raise)
-print('Number of months: ',t) 
+print('Number of months: ',t)
