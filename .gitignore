@@ -92,3 +92,6 @@ ENV/
 
 # MAC system file
 .DS_Store
+
+#spider IDE project
+.spyproject
