@@ -11,8 +11,12 @@ total_cost = float(input('Enter the cost of your dream home:'))
 portion_down_payment = 0.25
 current_savings = 0
 r = 0.04
-t = 0
-while current_savings < total_cost * portion_down_payment:
-    t = t + 1
-    current_savings = current_savings + annal_salary / 12 * portion_saved + current_savings * r / 12
-print('Number of months: ',t)
+number_of_month = 0
+target = total_cost * portion_down_payment
+monthly_savings = annal_salary / 12 * portion_saved
+monthly_interest_rate = r / 12
+while current_savings < target:
+    number_of_month = number_of_month + 1
+    pre_savings = current_savings
+    current_savings = pre_savings + monthly_savings + pre_savings * monthly_interest_rate
+print('Number of months: ',number_of_month)

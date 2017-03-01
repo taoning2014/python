@@ -21,7 +21,8 @@ while t != 36:
     count = count + 1
     current_savings = 0
     temp_annal_salary = annal_salary
-    while current_savings - total_cost * portion_down_payment < -100:
+    while current_savings - total_cost * portion_down_payment < 100:
+      
              current_savings = current_savings + temp_annal_salary / 12 * (min_portion_saved + max_portion_saved) / 10000 / 2 + current_savings * r / 12
              t = t + 1
              if t % 6 == 0:
